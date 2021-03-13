@@ -7,7 +7,7 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 module.exports = {
   mode: "development",
   devtool: isDevelopment ? "eval-source-map" : "source-map",
-  entry: path.resolve(__dirname, "src", "index.jsx"),
+  entry: path.resolve(__dirname, "src", "index.tsx"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
